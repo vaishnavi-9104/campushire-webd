@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createTable(){
+        var ul
+        var table=document.createElement("table");
+        var th=document.createElement("th");
+        
+        var tr1=document.createElement("tr");
+        //An empty list item is created
+        var td1=document.createElement("td");
+        td1.innerText="One";
+        var td2=document.createElement("td");
+        td2.innerText="Two";
+        var td3=document.createElement("td");
+        td3.innerText="Three";
+        var td4=document.createElement("td");
+        td4.innerText="Four";
+
+        th.appendChild(td1);
+        th.appendChild(td2);
+        th.appendChild(td3);
+        th.appendChild(td4);
+        table.appendChild(th);
+
+
+        tr1.appendChild(td1);
+        tr1.appendChild(td2);
+        tr1.appendChild(td3);
+        tr1.appendChild(td4);;
+        table.appendChild(tr1);
+
+        var a=document.querySelector("body");
+        a.appendChild(table);
+        a.style.border="2px solid";
+
+
+        
+        
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="createTable()">Create a table</button>
+    </div>
+    
+</body>
+</html>

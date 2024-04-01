@@ -1,0 +1,10 @@
+a=[1,2,3,4,5];
+b=[2,3,4,5,1];
+if(a[1]===b[0])
+{
+    console.log("True");
+}
+else
+{
+    console.log("Flase");
+}

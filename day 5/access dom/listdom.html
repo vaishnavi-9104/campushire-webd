@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createList(){
+        var ul
+        var ul=document.createElement("ul");
+        //<ul></ul> an empty unorderd list is created
+        var li1=document.createElement("li");
+        //An empty list item is created
+        li1.innerText="One";
+        var li2=document.createElement("li");
+        li2.innerText="Two";
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        document.querySelector("body").appendChild(ul);
+
+        
+        
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="createList()">Create List Items</button>
+    </div>
+    
+</body>
+</html>

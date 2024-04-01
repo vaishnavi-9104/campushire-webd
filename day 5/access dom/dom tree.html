@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createh1()
+        {
+
+            var h1=document.createElement("h1");
+            h1.innerText="I am Vaishnavi";
+            var bodyDocument=document.querySelector("body");
+            bodyDocument.appendChild(h1);
+
+
+            var h3=document.createElement("h3");
+            h3.innerText="This is h3 tag";
+            var div1=document.querySelector(".div2");
+            div1.appendChild(h3);
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="title">
+        <h2>DOM ACCESSING</h2>
+    </div>
+    <div>
+        <div class="div2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, quam? Quibusdam, voluptatem.</p>
+        </div>
+    </div>
+    <button id="btn" onclick="createh1()">Click Me</button>
+<!-- window.->document->html->head,body>><<body->div,div,button>> -->
+    <!-- 1. how to create a DOM Node h1 -->
+    <!-- createElement()----this is predefined function of document object."It has arguments not paramaters" -->
+    <!-- var h1ref=document.createElement("h1") -->
+    <!-- 2.Add DOMNode to the DOM  -->
+
+
+    
+</body>
+</html>

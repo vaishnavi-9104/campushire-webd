@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor()
+        {
+            var a=document.getElementById("color");
+            var b=document.getElementById("c");
+            if(a.value=="red")
+            {
+                b.style.color="red";
+            }
+            if(a.value=="blue")
+            {
+                b.style.color="blue"
+            }
+            if(a.value=="green")
+            {
+                b.style.color="green";
+            }
+            if(a.value=="pink")
+            {
+                b.style.color="pink";
+            }
+            if(a.value=="yellow")
+            {
+                b.style.color="yellow";
+            }
+        }
+
+            function changeSize()
+            {
+            var s=document.getElementById("size");
+            var b=document.getElementById("c");
+            var s1=s.value+"px";
+            b.style.fontSize=s1;
+            // if(s.value=="10")
+            // {
+            //     b.style.fontSize="10px";
+            // }
+            // if(s.value=="20")
+            // {
+            //     b.style.fontSize="20px";
+            // }
+            // if(s.value=="30")
+            // {
+            //     b.style.fontSize="30px";
+            // }
+            // if(s.value=="40")
+            // {
+            //     b.style.fontSize="40px";
+            // }
+            // if(s.value=="50")
+            // {
+            //     b.style.fontSize="50px";
+            // }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <h2 id="c" >Change Color And Size</h2>
+        <select id="color" onchange="changeColor()">
+            <option value="" disabled selected>Select </option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+            <option value="yellow">Yellow</option>
+</select>
+        <select id="size" onchange="changeSize()">
+            <option value="" disabled selected>Select </option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+</select>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin:90px 100px;
+            padding:0px;
+        }
+        button
+        {
+            background-color:lightblue;
+            border:1px solid;
+            margin:10px;
+        }
+        .container
+        {
+            width:300px;
+            border:2px solid;
+            box-shadow:5px 5px 10px gray;
+        }
+    </style>
+    <script>
+        function change()
+        {
+        var input=document.getElementById("name");
+        var n1=document.createElement("h3");
+        n1.innerText=input.value;
+        document.body.appendChild(n1);
+        var s1=document.createElement("button");
+        s1.innerText="Edit";
+        s1.style.backgroundColor="green";
+        var d1=document.createElement("button");
+        d1.innerText="Delete";
+        d1.style.backgroundColor="red";
+        document.body.appendChild(s1);
+        document.body.appendChild(d1);
+    }
+    </script>
+</head>
+<body>
+    <div class= "container">
+    <input type="text" placeholder="Enter anything" id="name" value="text">
+    <button id="button" onclick="change()">Submit</button><br/>
+</div>
+</body>
+</html>
