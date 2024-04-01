@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImage()
+        {
+            var a=document.getElementById("img");
+        a.src="https://www.w3schools.com/jsref/img_pulpit.jpg";
+    }
+        function nature()
+        {
+            var a=document.getElementById("img");
+        a.src="https://sgp1.digitaloceanspaces.com/prod.campushire.net/courses/thumbNail/65468134fbb48de37dc086eb.png?fit=crop&auto=format";
+    }
+    </script>
+    <style>
+        div
+        {
+            border:2px solid black;
+            padding:5px;
+        }
+        button
+        {
+            background-color:lightblue;
+            border:2px solid blue;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a" style="text-align:center">
+        <img src="https://sgp1.digitaloceanspaces.com/prod.campushire.net/courses/thumbNail/65468134fbb48de37dc086eb.png?fit=crop&auto=format" alt="img" id="img" height=300 width=300>
+        <br>
+        <br>
+        <button onclick="changeImage()">Click Me to Change Image</button>
+        <button onclick="nature()">Change to css</button>
+    </div>
+    
+</body>
+</html>
