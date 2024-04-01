@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function createContainer(title)
+        {
+            var styling={boxShadow:"0 0 10px green",
+            padding:"20px",
+            margin:"50px"
+            };
+            return (<div style={styling}>
+            <h2>{title} JS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dignissimos nihil numquam cum provident porro consectetur fuga pariatur harum voluptatem beatae commodi excepturi, repellendus doloribus ab itaque aliquam repudiandae a fugiat reiciendis laboriosam libero. Dolore esse, velit minus, autem fugit quibusdam nesciunt vel earum sit non maiores debitis omnis architecto.</p></div>);
+        }
+        ReactDOM.render(
+            <div>
+            {createContainer("React")} 
+            {createContainer("Angular")}
+            {createContainer("Node")}
+            </div>,document.getElementById('root')
+            );
+    </script>
+</body>
+</html>
